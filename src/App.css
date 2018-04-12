@@ -32,28 +32,32 @@
 .App {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.8rem;
+}
+.App a {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.8rem;
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  max-width: 50%;
 }
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 50vh;
   padding: 20px;
   color: white;
+  background-image: url('bg.jpg');
+  background-size: cover;
 }
-.App-title {
-  font-size: 1.5em;
+.App-header .App-title {
+  font-size: 1rem;
+  color: #aaa;
+  font-weight: 100;
+  display: block;
 }
 .App-intro {
   font-size: large;
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
