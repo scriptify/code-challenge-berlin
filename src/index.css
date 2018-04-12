@@ -124,6 +124,20 @@
   display: block;
   font-size: 0.7rem;
 }
+.EnterData {
+  margin-top: -0.5rem;
+}
+.EnterData .App-header-contain {
+  background-color: rgba(0, 0, 0, 0.87);
+  height: 50px;
+  width: 100vw;
+  position: relative;
+  top: 0;
+}
+.EnterData .App-header-contain img {
+  width: auto;
+  max-width: 30%;
+}
 .EnterData input {
   border-radius: 100px;
   background-color: #eee;
@@ -175,12 +189,11 @@
 }
 .EnterData hr {
   border: 0.5px solid rgba(0, 0, 0, 0.87);
-  width: 100%;
-  margin-top: 0.5rem;
-  padding: 0 2rem;
+  width: 90%;
 }
 .EnterData .Selfie {
   max-width: 50%;
+  margin: 1rem 0;
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

@@ -1,4 +1,5 @@
 import selfie from '../../take-selfie.png';
+import logo from '../../logo.png';
 import React, {
     Component
 }
@@ -50,33 +51,37 @@ class EnterData extends Component {
         })
     }
     render() {
-        return ( < div className = "EnterData row" > < div className = " col-xs-12" > < img src = {
-                selfie
+        return ( < div className = "EnterData" > < div className = "App-header-contain  row middle-xs center-xs" > < img src = {
+                logo
             }
-            className = "Selfie"
-            alt = "logo" / > < /div>< a href = "#"
-            className = "col-xs-12" > Import Photo < /a> < form className="col-xs-12"> {
-            this.state.attributes.map((att) => {
-                return ( < div key = {
-                        att.name
-                    } > < input type = "text"
-                    placeholder = {
-                        att.name
+            className = "App-logo col-xs-12"
+            alt = "logo" / > < /div>< div className = " col-xs-12" > < img src = {
+            selfie
+        }
+        className = "Selfie"
+        alt = "logo" / > < /div>< a href = "#"
+        className = "col-xs-12" > Import Photo < /a> < form className="col-xs-12"> {
+        this.state.attributes.map((att) => {
+            return ( < div key = {
+                    att.name
+                } > < input type = "text"
+                placeholder = {
+                    att.name
+                }
+                value = {
+                    att.value
+                }
+                onChange = {
+                    (e) => {
+                        this.changeAtt(att.name, e.target.value)
                     }
-                    value = {
-                        att.value
-                    }
-                    onChange = {
-                        (e) => {
-                            this.changeAtt(att.name, e.target.value)
-                        }
-                    }
-                    /> < /div > )
-            })
-        } < p class = "describeYou" > Add 3 things that describe you < /p>< Link to = "/preview
-        " > < button onClick = { () => {
-        window.meUser = this.state.attributes
-    }
+                }
+                /> < /div > )
+        })
+    } < p class = "describeYou" > Add 3 things that describe you < /p>< Link to = "/preview
+    " > < button onClick = { () => {
+    window.meUser = this.state.attributes
+}
 } > + < /button></Link > < /form> <hr / > < /div > );
 }
 }
