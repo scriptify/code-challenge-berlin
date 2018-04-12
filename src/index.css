@@ -6,18 +6,6 @@
 :before {
   box-sizing: border-box;
 }
-@font-face {
-  font-family: 'maison_neuebook';
-  src: url('maisonneue-book.woff2') format('woff2'), url('maisonneue-book.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'maison_neuedemi';
-  src: url('maisonneue-demi.woff2') format('woff2'), url('maisonneue-demi.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 /* Mixin */
 .visible {
   visibility: visible;
@@ -29,18 +17,21 @@
   opacity: 0;
   transition: visibility 0s 0.5s, opacity 0.5s linear;
 }
-.App {
+.App,
+.EnterData {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   color: rgba(0, 0, 0, 0.87);
   font-size: 0.8rem;
 }
-.App a {
+.App a,
+.EnterData a {
   text-decoration: underline;
   color: rgba(0, 0, 0, 0.87);
   font-size: 0.8rem;
 }
-.App .input-contain {
+.App .input-contain,
+.EnterData .input-contain {
   background-color: white;
   height: 30vh;
   width: 80vw;
@@ -51,10 +42,12 @@
   border-radius: 8px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-.App .input-contain .row {
+.App .input-contain .row,
+.EnterData .input-contain .row {
   height: 100%;
 }
-.App .input-contain input {
+.App .input-contain input,
+.EnterData .input-contain input {
   border: none;
   border-bottom: 1px solid black;
   width: 60vw;
@@ -64,38 +57,44 @@
   font-size: 2rem;
   font-weight: 200;
 }
-.App .input-contain .inputPhoto {
+.App .input-contain .inputPhoto,
+.EnterData .input-contain .inputPhoto {
   max-width: 25%;
 }
-.App .input-contain ::-webkit-input-placeholder {
+.App .input-contain ::-webkit-input-placeholder,
+.EnterData .input-contain ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: rgba(0, 0, 0, 0.87);
   text-align: center;
   font-size: 2rem;
   font-weight: 200;
 }
-.App .input-contain ::-moz-placeholder {
+.App .input-contain ::-moz-placeholder,
+.EnterData .input-contain ::-moz-placeholder {
   /* Firefox 19+ */
   color: rgba(0, 0, 0, 0.87);
   text-align: center;
   font-size: 2rem;
   font-weight: 200;
 }
-.App .input-contain :-ms-input-placeholder {
+.App .input-contain :-ms-input-placeholder,
+.EnterData .input-contain :-ms-input-placeholder {
   /* IE 10+ */
   color: rgba(0, 0, 0, 0.87);
   text-align: center;
   font-size: 2rem;
   font-weight: 200;
 }
-.App .input-contain :-moz-placeholder {
+.App .input-contain :-moz-placeholder,
+.EnterData .input-contain :-moz-placeholder {
   /* Firefox 18- */
   color: rgba(0, 0, 0, 0.87);
   text-align: center;
   font-size: 2rem;
   font-weight: 200;
 }
-.App .submit {
+.App .submit,
+.EnterData .submit {
   border-radius: 100px;
   background-color: black;
   position: absolute;
@@ -109,19 +108,79 @@
   font-size: 1rem;
   font-weight: 600;
 }
-.App .footer {
+.App .footer,
+.EnterData .footer {
   position: absolute;
   margin: 0 auto;
   text-align: center;
   bottom: 1rem;
   width: 100%;
 }
-.App .footer > .App-intro {
+.App .footer > .App-intro,
+.EnterData .footer > .App-intro {
   margin: 0 auto;
   width: 100%;
   text-align: center;
   display: block;
   font-size: 0.7rem;
+}
+.EnterData input {
+  border-radius: 100px;
+  background-color: #eee;
+  margin: 0.5rem 0;
+  border: none;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.EnterData ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.EnterData ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.EnterData :-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.EnterData :-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.EnterData button {
+  border-radius: 50%;
+  background-color: #eee;
+  width: 40px;
+  height: 40px;
+  font-weight: 800;
+  font-size: 1.5rem;
+  border: none;
+  margin-left: 10px;
+}
+.EnterData .describeYou {
+  display: inline;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.EnterData hr {
+  border: 0.5px solid rgba(0, 0, 0, 0.87);
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0 2rem;
+}
+.EnterData .Selfie {
+  max-width: 50%;
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
