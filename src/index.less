@@ -1,0 +1,179 @@
+    @phone: ~ "only screen and (max-width: 767px)";
+    @tablet: ~ "only screen and (min-width: 768px)";
+    @laptop: ~ "only screen and (min-width: 900px)";
+    @desktop: ~ "only screen and (min-width: 1200px)";
+    @wide: ~ "only screen and (min-width: 1500px)";
+    @import "./flexboxgrid.min.css";
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+    *,
+    :after,
+    :before {
+        box-sizing: border-box;
+    }
+    
+    @font-face {
+        font-family: 'maison_neuebook';
+        src: url('./maisonneue-book.woff2') format('woff2'), url('./maisonneue-book.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'maison_neuedemi';
+        src: url('./maisonneue-demi.woff2') format('woff2'), url('./maisonneue-demi.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    /* Mixin */
+    
+    .visible {
+        visibility: visible;
+        opacity: 0.9;
+        transition: opacity 0.5s linear;
+    }
+    
+    .hidden {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 0.5s, opacity 0.5s linear;
+    }
+    
+    .transition (@prop: all,
+    @time: 1s,
+    @ease: linear) {
+        -webkit-transition: @prop @time @ease;
+        -moz-transition: @prop @time @ease;
+        -o-transition: @prop @time @ease;
+        -ms-transition: @prop @time @ease;
+        transition: @prop @time @ease;
+    }
+    
+    .App {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 0.8rem;
+        a {
+            text-decoration: underline;
+            color: rgba(0, 0, 0, 0.87);
+            font-size: 0.8rem;
+            &.contact-us {}
+        }
+        .input-contain {
+            background-color: white;
+            height: 30vh;
+            width: 80vw;
+            left: 10vw;
+            margin: 0 auto;
+            position: absolute;
+            margin-top: -15vh;
+            border-radius: 8px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            .row {
+                height: 100%;
+            }
+            input {
+                border: none;
+                border-bottom: 1px solid black;
+                width: 60vw;
+                padding: 1rem 0;
+                color: rgba(0, 0, 0, 0.87);
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 200;
+            }
+            .inputPhoto {
+                max-width: 25%;
+            }
+            ::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                color: rgba(0, 0, 0, 0.87);
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 200;
+            }
+            ::-moz-placeholder {
+                /* Firefox 19+ */
+                color: rgba(0, 0, 0, 0.87);
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 200;
+            }
+            :-ms-input-placeholder {
+                /* IE 10+ */
+                color: rgba(0, 0, 0, 0.87);
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 200;
+            }
+            :-moz-placeholder {
+                /* Firefox 18- */
+                color: rgba(0, 0, 0, 0.87);
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 200;
+            }
+        }
+        .submit {
+            border-radius: 100px;
+            background-color: black;
+            position: absolute;
+            border: none;
+            color: white;
+            margin: 0 auto;
+            bottom: 10vh;
+            width: 80vw;
+            left: 10vw;
+            padding: 1rem 0;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .footer {
+            position: absolute;
+            margin: 0 auto;
+            text-align: center;
+            bottom: 1rem;
+            width: 100%;
+            > .App-intro {
+                margin: 0 auto;
+                width: 100%;
+                text-align: center;
+                display: block;
+                font-size: 0.7rem;
+            }
+        }
+    }
+    
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+        //        height: 80px;
+        max-width: 50%;
+    }
+    
+    .App-header {
+        background-color: #222;
+        height: 50vh;
+        padding: 20px;
+        color: white;
+        background-image: url('./bg.jpg');
+        background-size: cover;
+        .App-title {
+            font-size: 1rem;
+            color: #aaa;
+            font-weight: 100;
+            display: block;
+        }
+    }
+    
+    .App-intro {
+        font-size: large;
+    }
+    
+    //    @keyframes App-logo-spin {
+    //        from {
+    //            transform: rotate(0deg);
+    //        }
+    //        to {
+    //            transform: rotate(360deg);
+    //        }
+    //    }
