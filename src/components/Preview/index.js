@@ -12,7 +12,7 @@ class Preview extends Component {
     const user = this.props.isDetail ? window.comesFrom : window.meUser;
 
     return (
-      <div className="preview">
+      <div className={`preview${this.props.isDetail ? " profile" : ""}`}>
         <div className="bg" />
         
         <div className="App-header-contain row middle-xs center-xs">

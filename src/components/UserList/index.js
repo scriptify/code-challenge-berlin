@@ -40,6 +40,7 @@ class UserList extends Component {
     }
     this.state = {
       users: [
+        ...arr,
         createUser("Don E.", "20", "Germany", "Passion, people, travel", maximilianImg),
         createUser("Yasin Bert y.", "19", "Turkey", "Dream, share, learn", maximilianImg),
         createUser("Leon P.", "27", "Germany", "Quiet, friendly, learning by doing", maximilianImg),
@@ -49,7 +50,7 @@ class UserList extends Component {
         createUser("Ben W.", "21", "Germany", "Outside activities, code, enjoy life", maximilianImg),
         createUser("Valentin B.", "20", "Bulgaria", "", maximilianImg),
         createUser("Maximilian T.", "20", "Italy", "Passion, javascript, beatboxing", maximilianImg),
-        ...arr]
+      ]
     };
   }
   render() {
