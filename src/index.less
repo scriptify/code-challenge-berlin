@@ -44,6 +44,7 @@
             text-decoration: underline;
             color: rgba(0, 0, 0, 0.87);
             font-size: 0.8rem;
+            cursor: pointer;
             &.contact-us {}
         }
         .input-contain {
@@ -203,6 +204,111 @@
         .Selfie {
             max-width: 50%;
             margin: 1rem 0;
+        }
+    }
+    
+    //Group List Page
+    .groupPage {
+        margin-top: -0.5rem;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 0.8rem;
+        .App-header-contain {
+            background-color: rgba(0, 0, 0, 0.87);
+            height: 50px;
+            width: 100vw;
+            position: relative;
+            top: 0;
+            img {
+                width: auto;
+                max-width: 30%;
+            }
+        }
+        .listItems {
+            text-align: left;
+            margin: 0.5rem 0.5rem;
+            border-radius: 8px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            line-height: 0.5;
+            img {
+                max-width: 25%;
+                margin: 0.5rem 0 0.5rem 0;
+            }
+            .listItem {
+                ul {
+                    padding: 0 0.5rem;
+                    li {
+                        list-style: none;
+                        .age {
+                            font-weight: 100;
+                            color: #aaa;
+                        }
+                        .name {
+                            font-weight: 600;
+                        }
+                        .country {
+                            font-weight: 100;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .preview {
+        margin-top: -0.5rem;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 0.8rem;
+        .bg {
+            position: absolute;
+            background-color: #eee;
+            height: 80vh;
+            margin-top: 200px;
+            width: 100vw;
+            left: 0;
+            z-index: -1;
+        }
+        .App-header-contain {
+            background-color: rgba(0, 0, 0, 0.87);
+            height: 50px;
+            width: 100vw;
+            position: relative;
+            top: 0;
+            img {
+                width: auto;
+                max-width: 20%;
+                filter: brightness(50%);
+            }
+            h1 {
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: white;
+                text-align: left;
+            }
+        }
+        .pencil {
+            max-width: 50px;
+        }
+        .profilepic {
+            margin-top: 1rem;
+        }
+        .saveProfile {
+            border-radius: 100px;
+            background-color: black;
+            position: absolute;
+            border: none;
+            color: white;
+            margin: 0 auto;
+            bottom: 10vh;
+            width: 80vw;
+            left: 10vw;
+            padding: 1rem 0;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
         }
     }
     
