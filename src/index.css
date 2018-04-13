@@ -279,6 +279,7 @@
 }
 .preview .pencil {
   max-width: 50px;
+  float: right;
 }
 .preview .profilepic {
   margin-top: 1rem;
@@ -286,13 +287,10 @@
 .preview .saveProfile {
   border-radius: 100px;
   background-color: black;
-  position: absolute;
   border: none;
   color: white;
   margin: 0 auto;
-  bottom: 10vh;
-  width: 80vw;
-  left: 10vw;
+  width: 100%;
   padding: 1rem 0;
   font-size: 1rem;
   font-weight: 600;

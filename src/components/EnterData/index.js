@@ -78,8 +78,7 @@ class EnterData extends Component {
                 }
                 /> < /div > )
         })
-    } < Link to = "/preview
-    " > < button onClick = { () => {
+    } < Link to = "/preview" > < button onClick = { () => {
     window.meUser = this.state.attributes
 }
 } > Join Group < /button></Link > < /form>< /div > );
