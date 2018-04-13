@@ -21,18 +21,19 @@ class Preview extends Component {
           className="profilepic col-xs-12"
           alt="profilepic"
         />
+         <Link to="/enter-data">
+          <img src={pencil} className="col-xs-12 pencil" alt="pencil" />
+        </Link>
         {window.meUser &&
           window.meUser.attributes.map(att => {
             return (
-              <div key={att.name}>
-                <p> {att.name} </p>
+              <div key={att.name} className="listItem">
+                <p className="label"> {att.name} </p>
                 <p> {att.value} </p>
+                <hr />
               </div>
             );
           })}
-        <Link to="/enter-data">
-          <img src={pencil} className="col-xs-12 pencil" alt="pencil" />
-        </Link>
         <Link to="/groups">
           {" "}
           <button className="saveProfile "> Save Profile </button>
