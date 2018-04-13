@@ -48,7 +48,7 @@ class UserList extends Component {
             {this.state.users.map(u => {
               return (
                 <ul key={u.attributes[0].value}>
-                 <img src={profilethumb} className="col-xs-3" alt="logo" />
+                 <img src={u.pic} className="col-xs-3" alt="logo" />
                   {u.attributes.map(att => {
                     return (
                       <li key={att.name}>
