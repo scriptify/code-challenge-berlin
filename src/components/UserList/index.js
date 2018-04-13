@@ -5,6 +5,14 @@ import flag from "../../flag.png";
 import {withRouter} from "react-router-dom"
 
 import maximilianImg from '../../profile-pics/maximilian.jpeg';
+import ben from '../../profile-pics/ben.jpeg';
+import don from '../../profile-pics/don.jpeg';
+import emily from '../../profile-pics/emily.jpeg';
+import leon from '../../profile-pics/leon.jpeg';
+import lukas from '../../profile-pics/lukas.jpeg';
+import rodrigo from '../../profile-pics/rodrigo.jpeg';
+import valentin from '../../profile-pics/valentin.jpeg';
+import yasin from '../../profile-pics/yasin.jpeg';
 
 function createUser(name, age, country, description, imgSrc) {
   return {
@@ -41,14 +49,13 @@ class UserList extends Component {
     this.state = {
       users: [
         ...arr,
-        createUser("Don E.", "20", "Germany", "Passion, people, travel", maximilianImg),
-        createUser("Yasin Bert y.", "19", "Turkey", "Dream, share, learn", maximilianImg),
-        createUser("Leon P.", "27", "Germany", "Quiet, friendly, learning by doing", maximilianImg),
-        createUser("Rodrigo O.", "28", "Mexico", "Tequila, curious, friendly", maximilianImg),
-        createUser("Lukas T.", "21", "Germany", "Spring, spicy, space", maximilianImg),
-        createUser("Dennis W.", "17", "Germany", "Ambitioned, creative, perfectionist", maximilianImg),
-        createUser("Ben W.", "21", "Germany", "Outside activities, code, enjoy life", maximilianImg),
-        createUser("Valentin B.", "20", "Bulgaria", "", maximilianImg),
+        createUser("Don E.", "20", "Germany", "Passion, people, travel", don),
+        createUser("Yasin Bert y.", "19", "Turkey", "Dream, share, learn", yasin),
+        createUser("Leon P.", "27", "Germany", "Quiet, friendly, learning by doing", leon),
+        createUser("Rodrigo O.", "28", "Mexico", "Tequila, curious, friendly", rodrigo),
+        createUser("Lukas T.", "21", "Germany", "Spring, spicy, space", lukas),
+        createUser("Ben W.", "21", "Germany", "Outside activities, code, enjoy life", ben),
+        createUser("Valentin B.", "20", "Bulgaria", "", valentin),
         createUser("Maximilian T.", "20", "Italy", "Passion, javascript, beatboxing", maximilianImg),
       ]
     };
