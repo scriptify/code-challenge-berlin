@@ -362,6 +362,15 @@
 .preview .info-row {
   background: red;
 }
+.profile .bg {
+  margin-top: 225px;
+}
+.profile .profilepic {
+  margin-left: -2.75rem;
+}
+.profile .listItem:last-child p {
+  line-height: 1;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   max-width: 50%;
