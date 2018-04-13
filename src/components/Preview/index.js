@@ -9,20 +9,20 @@ class Preview extends Component {
     super(props);
   }
   render() {
+    const user = this.props.isDetail ? window.comesFrom : window.meUser;
+
     return (
       <div className="preview">
         <div className="bg" />
+        
         <div className="App-header-contain row middle-xs center-xs">
           <img src={logo} className="col-xs-3" alt="logo" />
           <h1 className="col-xs-9"> Profile preview </h1>
         </div>
-        <img
-          src={window.meUser.pic}
-          className="profilepic col-xs-12"
-          alt="profilepic"
-        />
-        {window.meUser &&
-          window.meUser.attributes.map(att => {
+        {this.props.isDetail && <Link to="/groups"><button>Back</button></Link>}
+        <img src={user.pic} className="profilepic col-xs-12" alt="profilepic" />
+        {user &&
+          user.attributes.map(att => {
             return (
               <div key={att.name}>
                 <p> {att.name} </p>
@@ -30,13 +30,16 @@ class Preview extends Component {
               </div>
             );
           })}
-        <Link to="/enter-data">
-          <img src={pencil} className="col-xs-12 pencil" alt="pencil" />
-        </Link>
-        <Link to="/groups">
-          {" "}
-          <button className="saveProfile "> Save Profile </button>
-        </Link>
+        {!this.props.isDetail && (
+          <Link to="/enter-data">
+            <img src={pencil} className="col-xs-12 pencil" alt="pencil" />
+          </Link>
+        )}
+        {!this.props.isDetail && (
+          <Link to="/groups">
+            <button className="saveProfile "> Save Profile </button>
+          </Link>
+        )}
       </div>
     );
   }

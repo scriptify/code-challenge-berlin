@@ -2,24 +2,30 @@ import React, { Component } from "react";
 import logo from "../../logo.png";
 import profilethumb from "../../profilethumb.png";
 import flag from "../../flag.png";
+import {withRouter} from "react-router-dom"
 
-function createUser() {
+import maximilianImg from '../../profile-pics/maximilian.jpeg';
+
+function createUser(name, age, country, description, imgSrc) {
   return {
-    pic:
-      "https://images.unsplash.com/photo-1505033575518-a36ea2ef75ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=96f240d94a3586a437843ce75222b382&auto=format&fit=crop&w=333&q=80",
+    pic: imgSrc,
     attributes: [
       {
-        name: "age",
-        value: "17"
+        name: "Age",
+        value: age
       },
       {
-        name: "name",
-        value: "Felix"
+        name: "Name",
+        value: name
       },
 
       {
-        name: "country",
-        value: "Italy"
+        name: "Country",
+        value: country
+      },
+      {
+        name: "Description",
+        value: description
       }
     ]
   };
@@ -33,7 +39,9 @@ class UserList extends Component {
       arr = [window.meUser];
     }
     this.state = {
-      users: [createUser(), ...arr]
+      users: [
+        createUser("Maximilian T.", "20", "Italy", "Passion, javascript, beatboxing", maximilianImg),
+        ...arr]
     };
   }
   render() {
@@ -47,7 +55,10 @@ class UserList extends Component {
           <div className="listItem col-xs-9">
             {this.state.users.map(u => {
               return (
-                <ul key={u.attributes[0].value}>
+                <ul key={u.attributes[0].value} onClick={() => {
+                  window.comesFrom = u;
+                  this.props.history.push("/detail")
+                }}>
                  <img src={u.pic} className="col-xs-3" alt="logo" />
                   {u.attributes.map(att => {
                     return (
@@ -65,4 +76,4 @@ class UserList extends Component {
     );
   }
 }
-export default UserList;
+export default withRouter(UserList);
