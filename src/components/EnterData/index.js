@@ -34,7 +34,7 @@ class EnterData extends Component {
       };
     } else {
       this.state = {
-        attributes: window.meUser,
+        attributes: window.meUser.attributes,
         pic: window.meUser.pic
       };
     }
