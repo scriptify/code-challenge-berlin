@@ -16,11 +16,13 @@ class Preview extends Component {
           <img src={logo} className="col-xs-3" alt="logo" />
           <h1 className="col-xs-9"> Profile preview </h1>
         </div>
-        <img
-          src={window.meUser.pic}
-          className="profilepic col-xs-12"
-          alt="profilepic"
-        />
+        <div className="row center-xs middle-xs">
+            <img
+              src={window.meUser.pic}
+              className="profilepic col-xs-12"
+              alt="profilepic"
+            />
+        </div>
          <Link to="/enter-data">
           <img src={pencil} className="col-xs-12 pencil" alt="pencil" />
         </Link>
