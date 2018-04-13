@@ -6,6 +6,9 @@
 :before {
   box-sizing: border-box;
 }
+*:focus {
+  outline: none;
+}
 /* Mixin */
 .visible {
   visibility: visible;
