@@ -44,6 +44,9 @@
         font-family: 'Montserrat', sans-serif;
         color: rgba(0, 0, 0, 0.87);
         font-size: 0.8rem;
+        form {
+            padding-bottom:150px;
+        }
 
         .campic {
             video {
@@ -252,25 +255,48 @@
             max-width: 25%;
             margin: 0.5rem 0 0.5rem 0;
         }
+        .imageThumb {
+            height:75px;
+            width:75px;
+            background-size:cover;
+            border-radius:10px;
+            background-position: 50% 50%;
+            margin:0.5rem 0;
+        }
 
         .listItem {
             text-align: left;
             margin: 0.5rem 0.5rem;
             border-radius: 8px;
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
             line-height: 0.5;
             padding: 0 0.5rem;
             li {
+                line-height:1.5;
                 list-style: none;
-                .age {
+                .Age {
                     font-weight: 100;
                     color: #aaa;
+                    padding:0;
+                    margin:0;
                 }
-                .name {
+                .Name {
                     font-weight: 600;
+                    padding:0;
+                    margin:0;
                 }
-                .country {
+                .Country {
                     font-weight: 100;
+                    padding:0;
+                    margin:0;
+                }
+                .Description {
+                      width: 250px;
+                      white-space: nowrap;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                      padding:0;
+                      margin:0;
                 }
             }
         }
@@ -282,6 +308,7 @@
         font-family: 'Montserrat', sans-serif;
         color: rgba(0, 0, 0, 0.87);
         font-size: 0.8rem;
+        padding-bottom:150px;
 
         .listItem{
             text-align: left;
@@ -304,7 +331,7 @@
             position: absolute;
             background-color: #eee;
             height: 80vh;
-            margin-top: 200px;
+            margin-top: 175px;
             width: 100vw;
             left: 0;
             z-index: -1;
@@ -332,7 +359,11 @@
             float:right;
         }
         .profilepic {
-            margin-top: 1rem;
+            margin: 1rem 0;
+            max-width:300px;
+            border-radius:10px;
+            padding:0;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
         }
         .saveProfile {
             border-radius: 100px;

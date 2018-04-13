@@ -68,7 +68,7 @@ class UserList extends Component {
                   window.comesFrom = u;
                   this.props.history.push("/detail")
                 }}>
-                 <img src={u.pic} className="col-xs-3" alt="logo" />
+                 <div style={{"backgroundImage": `url(${u.pic})`}} className="col-xs-3 imageThumb" alt="logo" ></div>
                  <div className="col-xs-9">
                   {u.attributes.map(att => {
                     return (
