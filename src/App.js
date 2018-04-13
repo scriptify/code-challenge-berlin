@@ -13,6 +13,7 @@ class App extends Component {
       <Route exact path="/" render={() => <TypeCode/>}></Route>
       <Route path="/enter-data" render={() => <EnterData/>} />
       <Route path="/preview" render={() => <Preview />} />
+      <Route path="/detail" render={() => <Preview isDetail />} />
       <Route path="/groups" render={() => <UserList/>} />
       </div>
     );
