@@ -48,7 +48,7 @@ class UserList extends Component {
             {this.state.users.map(u => {
               return (
                 <ul className="listItem row middle-xs center-xs" key={u.attributes[0].value}>
-                 <img src={u.pic} className="col-xs-3" alt="logo" />
+                 <div style={{"backgroundImage": `url(${u.pic})`}} className="col-xs-3 imageThumb" alt="logo" ></div>
                  <div className="col-xs-9">
                   {u.attributes.map(att => {
                     return (
