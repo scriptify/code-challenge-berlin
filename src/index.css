@@ -259,23 +259,23 @@
   line-height: 1.5;
   list-style: none;
 }
-.groupPage .listItem li .age {
+.groupPage .listItem li .Age {
   font-weight: 100;
   color: #aaa;
   padding: 0;
   margin: 0;
 }
-.groupPage .listItem li .name {
+.groupPage .listItem li .Name {
   font-weight: 600;
   padding: 0;
   margin: 0;
 }
-.groupPage .listItem li .country {
+.groupPage .listItem li .Country {
   font-weight: 100;
   padding: 0;
   margin: 0;
 }
-.groupPage .listItem li .description {
+.groupPage .listItem li .Description {
   width: 250px;
   white-space: nowrap;
   overflow: hidden;
@@ -289,6 +289,7 @@
   font-family: 'Montserrat', sans-serif;
   color: rgba(0, 0, 0, 0.87);
   font-size: 0.8rem;
+  padding-bottom: 150px;
 }
 .preview .listItem {
   text-align: left;
