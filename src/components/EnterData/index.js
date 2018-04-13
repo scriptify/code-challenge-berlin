@@ -15,19 +15,19 @@ class EnterData extends Component {
         pic: null,
         attributes: [
           {
-            name: "name",
+            name: "Name",
             value: ""
           },
           {
-            name: "age",
+            name: "Age",
             value: ""
           },
           {
-            name: "country",
+            name: "Country",
             value: ""
           },
           {
-            name: "description",
+            name: "Description",
             value: ""
           }
         ]

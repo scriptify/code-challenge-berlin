@@ -42,6 +42,12 @@ class UserList extends Component {
       users: [
         createUser("Don E.", "20", "Germany", "Passion, people, travel", maximilianImg),
         createUser("Yasin Bert y.", "19", "Turkey", "Dream, share, learn", maximilianImg),
+        createUser("Leon P.", "27", "Germany", "Quiet, friendly, learning by doing", maximilianImg),
+        createUser("Rodrigo O.", "28", "Mexico", "Tequila, curious, friendly", maximilianImg),
+        createUser("Lukas T.", "21", "Germany", "Spring, spicy, space", maximilianImg),
+        createUser("Dennis W.", "17", "Germany", "Ambitioned, creative, perfectionist", maximilianImg),
+        createUser("Ben W.", "21", "Germany", "Outside activities, code, enjoy life", maximilianImg),
+        createUser("Valentin B.", "20", "Bulgaria", "", maximilianImg),
         createUser("Maximilian T.", "20", "Italy", "Passion, javascript, beatboxing", maximilianImg),
         ...arr]
     };
