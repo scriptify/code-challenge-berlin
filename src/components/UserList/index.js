@@ -52,7 +52,9 @@ class UserList extends Component {
                             u.map(att => {
                                 return ( < li key = {
                                     att.name
-                                } > < p > {
+                                } > < p className = {
+                                    att.name
+                                } > {
                                     att.value
                                 } < /p> < /li > );
                             })

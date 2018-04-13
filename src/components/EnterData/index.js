@@ -78,11 +78,11 @@ class EnterData extends Component {
                 }
                 /> < /div > )
         })
-    } < p class = "describeYou" > Add 3 things that describe you < /p>< Link to = "/preview
+    } < Link to = "/preview
     " > < button onClick = { () => {
     window.meUser = this.state.attributes
 }
-} > + < /button></Link > < /form> <hr / > < /div > );
+} > Join Group < /button></Link > < /form>< /div > );
 }
 }
 export default EnterData;
