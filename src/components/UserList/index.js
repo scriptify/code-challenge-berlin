@@ -40,6 +40,8 @@ class UserList extends Component {
     }
     this.state = {
       users: [
+        createUser("Don E.", "20", "Germany", "Passion, people, travel", maximilianImg),
+        createUser("Yasin Bert y.", "19", "Turkey", "Dream, share, learn", maximilianImg),
         createUser("Maximilian T.", "20", "Italy", "Passion, javascript, beatboxing", maximilianImg),
         ...arr]
     };
