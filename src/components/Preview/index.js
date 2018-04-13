@@ -24,9 +24,10 @@ class Preview extends Component {
         {user &&
           user.attributes.map(att => {
             return (
-              <div key={att.name}>
-                <p> {att.name} </p>
+              <div key={att.name} className="listItem">
+                <p className="label"> {att.name} </p>
                 <p> {att.value} </p>
+                <hr />
               </div>
             );
           })}

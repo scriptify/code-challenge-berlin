@@ -17,12 +17,27 @@
   opacity: 0;
   transition: visibility 0s 0.5s, opacity 0.5s linear;
 }
+.App {
+  margin-top: -0.5rem;
+}
 .App,
 .EnterData {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   color: rgba(0, 0, 0, 0.87);
   font-size: 0.8rem;
+}
+.App .campic video,
+.EnterData .campic video {
+  height: 300px;
+  width: 300px;
+}
+.App .campic img,
+.EnterData .campic img {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  margin-top: 1rem;
 }
 .App a,
 .EnterData a {
@@ -60,7 +75,7 @@
 }
 .App .input-contain .inputPhoto,
 .EnterData .input-contain .inputPhoto {
-  max-width: 25%;
+  max-width: 28%;
 }
 .App .input-contain ::-webkit-input-placeholder,
 .EnterData .input-contain ::-webkit-input-placeholder {
@@ -98,13 +113,10 @@
 .EnterData .submit {
   border-radius: 100px;
   background-color: black;
-  position: absolute;
+  margin-top: 150px;
   border: none;
   color: white;
-  margin: 0 auto;
-  bottom: 10vh;
   width: 80vw;
-  left: 10vw;
   padding: 1rem 0;
   font-size: 1rem;
   font-weight: 600;
@@ -185,6 +197,9 @@
   font-size: 1rem;
   font-weight: 600;
 }
+.EnterData .takepic {
+  margin-bottom: 0.5rem;
+}
 .EnterData .describeYou {
   display: inline;
   font-size: 1rem;
@@ -216,31 +231,29 @@
   width: auto;
   max-width: 30%;
 }
-.groupPage .listItems {
+.groupPage img {
+  max-width: 25%;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.groupPage .listItem {
   text-align: left;
   margin: 0.5rem 0.5rem;
   border-radius: 8px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   line-height: 0.5;
-}
-.groupPage .listItems img {
-  max-width: 25%;
-  margin: 0.5rem 0 0.5rem 0;
-}
-.groupPage .listItems .listItem ul {
   padding: 0 0.5rem;
 }
-.groupPage .listItems .listItem ul li {
+.groupPage .listItem li {
   list-style: none;
 }
-.groupPage .listItems .listItem ul li .age {
+.groupPage .listItem li .age {
   font-weight: 100;
   color: #aaa;
 }
-.groupPage .listItems .listItem ul li .name {
+.groupPage .listItem li .name {
   font-weight: 600;
 }
-.groupPage .listItems .listItem ul li .country {
+.groupPage .listItem li .country {
   font-weight: 100;
 }
 .preview {
@@ -249,6 +262,23 @@
   font-family: 'Montserrat', sans-serif;
   color: rgba(0, 0, 0, 0.87);
   font-size: 0.8rem;
+}
+.preview .listItem {
+  text-align: left;
+  padding: 0rem 1rem;
+}
+.preview .listItem p {
+  max-width: 50%;
+  padding: 0;
+  line-height: 0.5;
+  font-size: 1rem;
+}
+.preview .listItem .label {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.preview .listItem hr {
+  border: 0.5px solid rgba(0, 0, 0, 0.87);
 }
 .preview .bg {
   position: absolute;
@@ -279,6 +309,7 @@
 }
 .preview .pencil {
   max-width: 50px;
+  float: right;
 }
 .preview .profilepic {
   margin-top: 1rem;
@@ -286,17 +317,18 @@
 .preview .saveProfile {
   border-radius: 100px;
   background-color: black;
-  position: absolute;
   border: none;
   color: white;
   margin: 0 auto;
-  bottom: 10vh;
-  width: 80vw;
-  left: 10vw;
+  width: 100%;
   padding: 1rem 0;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+  margin-top: 1rem;
+}
+.preview .info-row {
+  background: red;
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
