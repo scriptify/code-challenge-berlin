@@ -42,13 +42,14 @@ class UserList extends Component {
         <div className="App-header-contain row middle-xs center-xs">
           <img src={logo} className="col-xs-12" alt="logo" />
         </div>
-        <div className="listItems row middle-xs center-xs">
+        <div className="row middle-xs center-xs">
           
-          <div className="listItem col-xs-9">
+          <div className="col-xs-12">
             {this.state.users.map(u => {
               return (
-                <ul key={u.attributes[0].value}>
+                <ul className="listItem row middle-xs center-xs" key={u.attributes[0].value}>
                  <img src={u.pic} className="col-xs-3" alt="logo" />
+                 <div className="col-xs-9">
                   {u.attributes.map(att => {
                     return (
                       <li key={att.name}>
@@ -56,6 +57,7 @@ class UserList extends Component {
                       </li>
                     );
                   })}
+                  </div>
                 </ul>
               );
             })}

@@ -69,9 +69,9 @@ class EnterData extends Component {
         <div className="App-header-contain  row middle-xs center-xs">
           <img src={logo} className="App-logo col-xs-12" alt="logo" />
         </div>
-        <div className=" col-xs-12">
+        <div className="campic col-xs-12">
           {this.state.pic ? (
-            <img src={this.state.pic} height="300" width="300px" />
+            <img style={{"backgroundImage": `url(${this.state.pic})`}} />
           ) : (
             <Webcam
               audio={false}
@@ -82,7 +82,7 @@ class EnterData extends Component {
             />
           )}
         </div>
-        <button onClick={this.capture} className="col-xs-12">
+        <button onClick={this.capture} className="takepic col-xs-12">
           Take picture
         </button>
         <form className="col-xs-12">
