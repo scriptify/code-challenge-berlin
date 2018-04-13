@@ -1,4 +1,6 @@
 import selfie from '../../take-selfie.png';
+import profile from "../../profilepic.png"
+
 import logo from '../../logo.png';
 import React, {
     Component
@@ -31,12 +33,14 @@ class EnterData extends Component {
                         name: "description"
                         , value: ""
                 }
-              ]
+              ],
+              pic: selfie
             }
         }
         else {
             this.state = {
-                attributes: window.meUser
+                attributes: window.meUser,
+                pic: selfie
             }
         }
     }
@@ -56,10 +60,10 @@ class EnterData extends Component {
             }
             className = "App-logo col-xs-12"
             alt = "logo" / > < /div>< div className = " col-xs-12" > < img src = {
-            selfie
+            this.state.pic
         }
         className = "Selfie"
-        alt = "logo" / > < /div>< a href = "#"
+        alt = "logo" / > < /div>< a onClick={() => {this.setState({pic: profile})}}
         className = "col-xs-12" > Import Photo < /a> < form className="col-xs-12"> {
         this.state.attributes.map((att) => {
             return ( < div key = {
